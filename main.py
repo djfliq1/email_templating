@@ -6,7 +6,7 @@ from definitions.definitions import *
 
 def main():
     with open('./emails.csv', 'r') as email_list:
-        new_email_list = csv.reader(email_list)
+        new_email_list = csv.reader(email_list)  #YES!
 
         with SMTP('smtp.gmail.com', 587) as smtp:
             smtp.ehlo()
